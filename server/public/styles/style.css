@@ -1,6 +1,6 @@
-.list-group-item {
-  width: 120px
+.table-bordered {
+  width:10%;
 }
-.spacer {
-  height: 40px;
+thead {
+  background-color: lightgrey;
 }

@@ -38,19 +38,19 @@ function checkStatus (responseToCheck){
 function appendListings(forRentListings, forSaleListings) {
   for(var i = 0; i < forRentListings.length; i ++){
     var rentListing = forRentListings[i];
-    var $el = $(".listings").last();
-    $el.append("<li class ='list-group-item'>" + "<b>" + "Rent: " + "</b>" + "$" + rentListing.rent + "</li>");
-    $el.append("<li class ='list-group-item'>" + "<b>" + "SqFt: " + "</b>" + rentListing.sqft + "</li>");
-    $el.append("<li class ='list-group-item'>" + "<b>" + "City: " + "</b>" + rentListing.city + "</li>");
-    $el.append("<li class='spacer'>" + " " + "</li>");
-
+    $("#rentListings").append("<tr></tr>");
+    var $el = $("#rentListings").children().last();
+    $el.append("<td class='listing' style='width:10%'>" + rentListing.rent + "</td>");
+    $el.append("<td class='listing' style='width:10%'>" + rentListing.sqft + "</td>");
+    $el.append("<td class='listing' style='width:10%'>" + rentListing.city + "</td>");
   } // end for
+
   for(var j = 0; j < forSaleListings.length; j ++){
     var saleListing = forSaleListings[j];
-    var $el2 = $(".listings").last();
-    $el2.append("<li class ='list-group-item'>" + "<b>" + "Cost: " + "</b>" + "$" + saleListing.cost + "</li>");
-    $el2.append("<li class ='list-group-item'>" + "<b>" + "SqFt: " + "</b>" + saleListing.sqft + "</li>");
-    $el2.append("<li class ='list-group-item'>" + "<b>" + "City: " + "</b>" + saleListing.city + "</li>");
-    $el2.append("<li class='spacer'>" + " " + "</li>");
+   $("#saleListings").append("<tr></tr>");
+    var $el2 = $("#saleListings").children().last();
+    $el2.append("<td class='listing'>" + saleListing.cost + "</td>");
+    $el2.append("<td class='listing'>" + saleListing.sqft + "</td>");
+    $el2.append("<td class='listing'>" + saleListing.city + "</td>");
   } // end for
 } // end appendListings
