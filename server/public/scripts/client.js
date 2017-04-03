@@ -20,6 +20,18 @@ function getListings() {
   });
 }
 
+// // POST new house listings
+// function postListings() {
+//   $.ajax({
+//     type: "POST",
+//     url: "/listings/newpost",
+//     success: function(response){
+//       console.log(response);
+//     }
+//   });
+// }
+
+// checks all listings and sorts into "for sale" or "for rent" arrays
 function checkStatus (responseToCheck){
   for(var i = 0; i < responseToCheck.length; i ++){
     if (responseToCheck[i].cost === undefined){
@@ -41,9 +53,13 @@ function appendListings(forRentListings, forSaleListings) {
     var rentListing = forRentListings[i];
     $("#rentListings").append("<tr></tr>");
     var $el = $("#rentListings").children().last();
-    $el.append("<td class='listing' style='width:10%'>" + "$" + rentListing.rent + "</td>");
-    $el.append("<td class='listing' style='width:10%'>" + rentListing.sqft + " ft²" + "</td>");
-    $el.append("<td class='listing' style='width:10%'>" + rentListing.city + "</td>");
+    // $el.append("<td class='listing' style='width:10%'>" + "$" + rentListing.rent + "</td>");
+    // $el.append("<td class='listing' style='width:10%'>" + rentListing.sqft + " ft²" + "</td>");
+    // $el.append("<td class='listing' style='width:10%'>" + rentListing.city + "</td>");
+
+    $el.append("<td class='listing'>" + "$" + rentListing.rent + "</td>");
+    $el.append("<td class='listing'>" + rentListing.sqft + " ft²" + "</td>");
+    $el.append("<td class='listing'>" + rentListing.city + "</td>");
   } // end for
 
   for(var j = 0; j < forSaleListings.length; j ++){

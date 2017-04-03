@@ -1,13 +1,20 @@
+body {
+  background-color: #edf1f7;
+}
 h1 {
   margin-left: 100px;
 }
 h2 {
   margin-left: 100px;
 }
+
 .table-bordered {
   width:20%;
   margin-left: 100px;
 }
 thead {
   background-color: lightgrey;
+}
+td {
+  background-color: white;
 }
