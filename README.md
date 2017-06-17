@@ -1,6 +1,10 @@
 # Weekend Challenge 4 - Mongo and Bootstrap
 Weekend assignment, displaying real estate listings, and accounting for inconsistent data types in Mongo.
 
+## Product Example
+
+![login](login.png)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
