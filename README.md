@@ -7,8 +7,9 @@ These instructions will get you a copy of the project up and running on your loc
 1. Download .zip of the project
 2. Run this command in Terminal: mongoimport --db realestate --collection listings --file listingData.js
 3. npm install
-4. npm start
-5. type localhost:5000 into a browser
+4. mongod
+5. npm start
+6. localhost:5000 in a browser
 
 ## Technologies Used
 - JavaScript
