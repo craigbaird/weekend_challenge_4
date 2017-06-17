@@ -1,4 +1,28 @@
 # Weekend Challenge 4 - Mongo and Bootstrap
+Weekend assignment, displaying real estate listings, and accounting for inconsistent data types in Mongo.
+
+## Product Example
+
+![listings](listings.png)
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+1. Download .zip of the project
+2. Run this command in Terminal: mongoimport --db realestate --collection listings --file listingData.js
+3. npm install
+4. mongod
+5. npm start
+6. localhost:5000 in a browser
+
+## Technologies Used
+- JavaScript
+- jQuery
+- Node
+- MongoDB
+- Bootstrap
+
+## Instructions I was given
 
 Welcome to weekend challenge 4! This weekend, you will take on the role of an application developer for a real estate company. You will be working with Data that we will be providing to you. It will be a collection called “listings”. Inside of it, you will find information for properties that are either for Rent or for Sale.
 
