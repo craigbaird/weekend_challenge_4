@@ -3,7 +3,7 @@ Weekend assignment, displaying real estate listings, and accounting for inconsis
 
 ## Product Example
 
-![login](login.png)
+![listings](listings.png)
 
 ## Getting Started
 
