@@ -19,7 +19,7 @@ MongoDB.on("error", function(err){
 
 // success connecting to database
 MongoDB.once("open", function(){
-  console.log("All up in the Mongo, brah");
+  console.log("Connected to Mongo");
 });
 
 // Port
@@ -37,5 +37,5 @@ app.get("/", function(req,res){
 
 // Listen
 app.listen(app.get("port"), function(){
-  console.log("What up! Listening on port " + app.get("port") + " dude!");
+  console.log("Listening on port " + app.get("port") );
 });

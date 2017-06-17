@@ -14,10 +14,35 @@
   </head>
   <body>
     <h1>Real Estate Company </h1>
-
+    <br>
+    <h2 id="addListHeading">Add a New Listing:</h2>
+    <div class="form-group row">
+      <label for="priceInput" class="col-2 col-form-label">Price</label>
+      <div class="col-10">
+        <input class="form-control" type="number" placeholder="Price" id="priceInput">
+      </div>
+      <label for="sqFtInput" class="col-2 col-form-label">SqFt</label>
+      <div class="col-10">
+        <input class="form-control" type="number" placeholder="SqFt" id="sqFtInput">
+      </div>
+      <label for="cityInput" class="col-2 col-form-label">City</label>
+      <div class="col-10">
+        <input class="form-control" type="text" placeholder="City" id="cityInput">
+      </div>
+      </div>
+    </div><!-- end form-group row div -->
+    <div class="radioButtons">
+    <form action="">
+      <input class="selectListingType" type="radio" name="sale" value="rent"> For Rent<br>
+      <input class="selectListingType" type="radio" name="sale" value="rent"> For Sale<br>
+    </form>
+    </div>
+    <button type="button" class="btn btn-primary btn-sm">Submit</button>
+    <div class ="spacer">
+    </div> <!-- end div spacer -->
     <!-- rent listings table -->
-    <div class="col-md-6" id="forRentContainer">
-      <h2>For Rent</h2>
+    <div class="col-md-3" id="forRentContainer">
+      <h2 id="rentHeading">For Rent</h2>
       <table class="table table-bordered" id="rentListingsTbl">
         <thead>
           <tr>
@@ -32,8 +57,8 @@
     </div>
 
     <!-- for sale listings table  -->
-    <div class="col-md-6" id="forSaleContainer">
-      <h2>For Sale</h2>
+    <div class="col-md-3" id="forSaleContainer">
+      <h2 id="saleHeading">For Sale</h2>
       <table class="table table-bordered" id ="saleListingsTbl">
         <thead>
           <tr>

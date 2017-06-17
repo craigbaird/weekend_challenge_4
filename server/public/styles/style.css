@@ -1,13 +1,29 @@
 body {
   background-color: #edf1f7;
+  margin-left: 320px;
 }
 h1 {
-  margin-left: 100px;
+  margin-left: 112px;
+  color: #465a77;
+}
+#addListHeading {
+  margin-left: 114px;
 }
 h2 {
   margin-left: 100px;
+  font-size: 20px;
+  color: #7c7e82;
 }
-
+ .radioButtons {
+  margin-left: 120px;
+}
+.btn {
+  margin-left: 116px;
+}
+.form-group {
+  margin-left: 115px;
+  width: 210px;
+}
 .table-bordered {
   width:20%;
   margin-left: 100px;
@@ -17,4 +33,7 @@ thead {
 }
 td {
   background-color: white;
+}
+.spacer {
+  height: 30px;
 }
