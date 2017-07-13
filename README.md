@@ -1,4 +1,4 @@
-# Weekend Challenge 4 - Mongo and Bootstrap
+# Prime Digital Academy Weekend Challenge 4 - Mongo and Bootstrap
 Weekend assignment, displaying real estate listings, and accounting for inconsistent data types in Mongo.
 
 ## Product Example
