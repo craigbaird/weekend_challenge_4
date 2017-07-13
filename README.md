@@ -1,5 +1,5 @@
 # Prime Digital Academy Weekend Challenge 4 - Mongo and Bootstrap
-Weekend assignment, displaying real estate listings, and accounting for inconsistent data types in Mongo.
+Weekend assignment, displaying real estate listings with jQuery, and accounting for inconsistent data types in Mongo.
 
 ## Product Example
 
